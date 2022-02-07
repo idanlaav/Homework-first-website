@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template1</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./js/bootstrap"></script>
+    <script src="./js/popper"></script>
+</head>
+
+<body>
+    <!-- navbar example -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index1.html">Home</a>
+                    <a class="navbar-brand" href="./Restaurants page.html">Restaurants</a>
+                    <a class="navbar-brand" href="./Images page.html">Images</a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Webstie Condtruction</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Navbar website.html">Navbar
+                                Example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Carousel website.html">Carousel Example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Card website.html">Card Example</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav><br><br>
+
+    <!-- homepage name -->
+    <h2 style="font-size: 30px; margin-top: 4%;">How to make cards</h2>
+    <hr>
+    <div class="bd-content ps-lg-4">
+        <h1 class="bd-title" id="content">Cards</h1>
+        <p class="bd-lead">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and
+            options.</p>
+        <h2 id="about">About<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#about"
+                style="padding-left: 0.375em;"></a></h2>
+        <p>A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and
+            footers, a wide variety of content, contextual background colors, and powerful display options. If you’re
+            familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those
+            components is available as modifier classes for cards.</p>
+        <h2 id="horizontal">Horizontal<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                href="#horizontal" style="padding-left: 0.375em;"></a></h2>
+        <p>Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive
+            way. In the example below, we remove the grid gutters with <code>.g-0</code> and use <code>.col-md-*</code>
+            classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed
+            depending on your card content.</p>
+            <div class="bd-example">
+                <div class="card mb-3" style="max-width: 1000px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <svg class="bd-placeholder-img img-fluid rounded-start" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card mb-3"</span> <span class="na">style</span><span class="o">=</span><span class="s">"max-width: 540px;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row g-0"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-4"</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"img-fluid rounded-start"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-8"</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>Last updated 3 mins ago<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+    
+        </div>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+
+        <hr />
+
+        <div class="container">
+            <h1 class="mt-5">Hot Food</h1>
+            <p class="lead">These are the recommended dishes</p>
+            <p>enjoy your meal</p>
+        </div>
+
+        <div class="container">
+            <h2>Follow me</h2>
+            <ul class="icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100000368470850"
+                        class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="https://instagram.com/idanlaav?utm_medium=copy_link"
+                        class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/idanlaav" class="icon brands style2 fa-github"><span
+                            class="label">GitHub</span></a>
+                </li>
+                <li><a href="whatsapp:(+972) 52-5349228" class="icon brands style2 fa-500px"><span
+                            class="label">whatsapp</span></a>
+                </li>
+                <li><a href="tel:(+972) 52-5349228" class="icon solid style2 fa-phone"><span
+                            class="label">Phone</span></a>
+                </li>
+                <li><a href="message:(+972) 52-5349228" class="icon solid style2 fa-envelope"><span
+                            class="label">Email</span></a></li>
+            </ul>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
